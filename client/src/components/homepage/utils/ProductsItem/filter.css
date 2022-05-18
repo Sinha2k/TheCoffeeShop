@@ -1,0 +1,190 @@
+.filter{
+    margin-top: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 80px;
+}
+.filter.show .fa-chevron-down{
+    transform: rotateX(-180deg);
+}
+.filter button{
+    background-color: white;
+    color: black;
+    padding: 5px 30px 5px 30px;
+    border: 1px solid rgb(148, 147, 147);
+    border-radius: 40px;
+}
+.filter button.active {
+    background-color: #ea8025;
+    color: white;
+    border: none;
+}
+.dropdown_filter{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+    background: white;
+}
+.dropdown_filter:active{
+    background: #f0f1f6;
+    box-shadow: inset 7px 7px 14px #cccdd1, inset -7px -7px 14px #ffffff;
+}
+.dropdown_filter input{
+    font-size: 0.9rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    border: none;
+    color: gray;
+    outline: none;
+    cursor: pointer;
+    padding-left: 5px;
+    background: none;
+    width: auto;
+}
+.dropdown_filter input:focus{
+    border: none;
+    outline: none;
+}
+.dropdown_filter .fa-chevron-down{
+    font-size: 0.6rem;
+    color: gray;
+    float: right;
+    margin-top: -18px;
+    margin-right: 10px;
+    transition: all 500ms ease-in-out;
+}
+.dropdown_filter.show .options{
+    visibility: visible;
+    opacity: 1;
+}
+.options{
+    position: relative;
+    width: 200px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 20px 20px 30px #d0d0d0, -20px -20px 30px #ffffff;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+    margin-left: -34px;
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+}
+.options li{
+    color: gray;
+    font-size: 0.9rem;
+    list-style-type: none;
+    margin-left: -32px;
+    padding-top: 5px;
+    padding-left: 18px;
+    width: 200px;
+    padding-bottom: 5px;
+    transition: all 500ms ease-in-out;
+}
+.options li:first-child{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.options li:last-child{
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.options li:hover{
+    background-color: rgb(0,0,0,.1);
+}
+.filter_search{
+    max-width: 88%;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+}
+.search_bar input[type="checkbox"]{
+    display: none;
+}
+.search_bar{
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 60px;
+    height: 50px;
+    margin-top: 2rem;
+    transition: 0.5s;
+    margin-left: -60px;
+}
+.box label{
+    font-size: 16px;
+    color: gray;
+    box-shadow: -2px -2px 5px #edeff1,2px 2px 5px #cacfd8;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: -50px;
+    margin-top: 2px;
+    z-index: 2;
+    position: relative;
+}
+.box label .fa-search{
+    margin-top: 12px;
+}
+.box label:hover{
+    box-shadow: -7px -7px 14px #edeff1,7px 7px 14px #cacfd8;
+    transform: scale(1.1);
+}
+.box input{
+    width: 100%;
+    height: 86%;
+    background: transparent;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    color: gray;
+    box-shadow: -5px -5px 8px #edeff1,5px 5px 8px #cacfd8;
+    padding-left: 20px;
+    transition: 0.5s;
+    opacity:0;
+}
+.box input:hover{
+    box-shadow: -7px -7px 14px #edeff1,7px 7px 14px #cacfd8;
+}
+#check:checked+.box{
+    width: 300px;
+}
+#check:checked+.box > input{
+    opacity: 1;
+}
+#check:checked+.box > label{
+    box-shadow: none;
+}
+@media  (max-width: 414px){
+    .filter_search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        margin-left: 30px;
+    }
+    .filter{
+        position: relative;
+        margin-top: 20px;
+        margin-left: 160px;
+        margin-bottom: -20px;
+    }
+    #check:checked+.box{
+        width: 240px;
+    }
+}

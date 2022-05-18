@@ -1,0 +1,403 @@
+.cart_page{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card_header h1{
+   text-align: center;
+   margin-top: 1.6rem;
+   font-size: 2.6rem;
+   color:rgb(248, 112, 48) ;
+   font-family: 'Playfair Display', serif;
+}
+.cart_body{
+    width: 100%;
+    margin-top: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.cart_list{
+    width: 60%;
+}
+.product_cart_card img{
+    height: 100%;
+    width: 200px;
+}
+.product_cart_card{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    position: relative;
+}
+.product_cart_card:hover{
+    border: 1px solid rgb(223, 220, 220);
+    box-shadow: 4px 7px rgb(0,0,0,0.1);
+}
+.product_cart_content{
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 40%;
+}
+.product_cart_content h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.product_cart_content span{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 4px;
+}
+.price_quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 60%;
+}
+.control{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+.control h4{
+    margin-top: 5px;
+}
+.control button{
+    background: transparent;
+    border: none;
+    text-align: center;
+    width: 34%;
+    font-size: 30px;
+    font-weight: 300;
+}
+.price_quantity p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.product_cart_card .remove{
+    position: absolute;
+    border: none;
+    right: 0;
+    top: 0;
+    outline: none;
+    padding: 4px 10px 4px 10px;
+    visibility: hidden;
+    background:rgb(248, 112, 48);
+    color: white;
+}
+.product_cart_card:hover .remove{
+    visibility: visible;
+}
+.cart_total{
+    width: 26%;
+    border: 1px solid rgb(223, 220, 220);
+    height: 400px;
+    border-radius: 3px;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cart_total h2{
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    color:rgb(248, 112, 48) ;
+}
+.cart_total .row_items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart_total .row_items p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.cart_total .row_items p:first-child{
+    width: 37%;
+    text-align: left;
+}
+.cart_total .row_items p:last-child{
+    width: 37%;
+    text-align: right;
+}
+.cart_total .row_items h3{
+    font-size: 20px;
+}
+.cart_total .row_items h3:first-child{
+    width: 37%;
+    text-align: left;
+}
+.cart_total .row_items h3:last-child{
+    width: 37%;
+    text-align: right;
+}
+.cart_total button{
+    background: rgb(248, 112, 48);
+    outline: none;
+    border: none;
+    width: 74%;
+    color: white;
+    padding: 6px 0px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.cart_total.fixed {
+    top: 80px;
+    left: 66%;
+    position: sticky;
+    width: 26%;
+}
+.cart_total_responsive{
+    display: none;
+}
+@media  (max-width: 414px){
+    .card_header h1{
+        text-align: center;
+        margin-top: 1.6rem;
+        font-size: 2rem;
+        color:rgb(248, 112, 48) ;
+        font-family: 'Playfair Display', serif;
+     }
+    .cart_total{
+        display: none;
+    }
+    .cart_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cart_list{
+        width: 94%;
+    }
+    .product_cart_card img{
+        height: 100%;
+        width: 100px;
+    }
+    .product_cart_card{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(223, 220, 220);
+        box-shadow: 4px 7px rgb(0,0,0,0.1);
+        position: relative;
+    }
+    .product_cart_card:hover{
+        border: 1px solid rgb(223, 220, 220);
+        box-shadow: 3px 4px rgb(0,0,0,0.1);
+    }
+    .product_cart_content{
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 50%;
+    }
+    .product_cart_content h4{
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .product_cart_content span{
+        font-size: 10px;
+        font-weight: 300;
+        margin-left: 2px;
+    }
+    .price_quantity{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 20%;
+        height: 60%;
+    }
+    .price_quantity .control{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+    }
+    .control h4{
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+    .control button{
+        background: transparent;
+        border: none;
+        text-align: center;
+        width: 34%;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .price_quantity p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .product_cart_card .remove{
+        position: absolute;
+        border: none;
+        right: 0;
+        top: 0;
+        outline: none;
+        font-size: 10px;
+        padding: 2px 5px 2px 5px;
+        background:rgb(248, 112, 48);
+        color: white;
+        visibility: visible;
+    }
+    .cart_total_responsive{
+        display: block;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        background: white;
+        border-top: 1px solid rgb(179, 178, 178);
+    }
+    .cart_total_responsive h4{
+        font-size: 15px;
+        font-weight: 500;
+        width: 80%;
+        text-align: left;
+        margin-left: 0.7rem;
+        margin-top: 5px;
+    }
+    .cart_total_responsive span{
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 4px;
+
+    }
+    .cart_total_responsive button{
+        outline: none;
+        background:rgb(248, 112, 48) ;
+        color: white;
+        height: 100%;
+        width: 20%;
+        border: none;
+        font-size: 12px;
+        padding: 4px 6px 4px 6px;
+        border-top: 1px solid rgb(248, 112, 48) ;
+    }
+}
+.cart_footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    width: 80%;
+    margin-left: 10%;
+}
+.cart_footer h1{
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+.cart_modal{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    background: white;
+    color: gray;
+    border-radius: 20px;
+    right: 110px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(223, 220, 220);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+  }
+.cart_modal h5{
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 2rem;
+    color: rgb(248, 112, 48);
+}
+.cart_modal h6{
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.3rem;
+    color: rgb(109, 196, 28);
+    margin-top: 0.5rem;
+}
+.cart_modal_body{
+    width: 90%;
+    height: 240px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.cart_modal_body::-webkit-scrollbar{
+    width: 3px;
+}
+  
+.cart_modal_body::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+.cart_modal_body::-webkit-scrollbar-thumb:hover{
+    background: rgb(117, 116, 116);
+}
+.cart_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin-left: 2%;
+    padding-bottom: 4px;
+}
+.cart_item img{
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 0px;
+}
+.cart_item_content h3 , span{
+    font-size: 0.7rem;
+}
+.cart_item_content span:hover{
+    color: gray;
+}
+.cart_item h4{
+    font-size: 1rem;
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: rgb(248, 112, 48);
+    text-align: center;
+}
+.cart:hover .cart_modal{
+    visibility: visible;
+    opacity: 1;
+}
+.cart_empty {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart_empty h2{
+    font-size: 4rem;
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: rgb(248, 112, 48);
+    text-align: center;
+}
+@import url('../history/history.css');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Homemade+Apple&family=Mouse+Memoirs&display=swap');

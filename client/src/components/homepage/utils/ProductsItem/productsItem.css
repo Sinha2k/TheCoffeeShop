@@ -1,0 +1,133 @@
+.product_card{
+   width: 250px;
+   height: 330px;
+   overflow: hidden;
+   background: white;
+   border: none;
+}
+.related_card{
+    overflow: hidden;
+ }
+.product_card a:hover{
+    color: black;
+}
+.product_card img{
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px 2px rgba(165, 164, 164, 0.3);
+    overflow: hidden;
+}
+.product_card h3{
+    font-size: 16px;
+}
+.card_body{
+    margin-top: 14px;
+}
+.product_card span{
+    font-size: 14px;
+    color: rgb(146, 146, 146)
+}
+.related_card img{
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px 2px rgba(165, 164, 164, 0.3);
+}
+.related_card h3{
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+.related_card span{
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+.product_card .review_product_item{
+    position: absolute;
+    margin-left: 2.4rem;
+    transform: scale(0.8)
+}
+.related_card .review_product_item{
+    position: absolute;
+    margin-left: -1.5rem;
+    transform: scale(0.6)
+}
+.card_header{
+    position: relative;
+}
+.product_card  .sale_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 6px;
+    left: 6px;
+    background-image: linear-gradient(rgb(228, 28, 28), rgb(248, 173, 33));
+}
+.product_card  .new_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    color: white;
+    width: 120px;
+    height: 30px;
+    transform: rotate(-45deg);
+    top: 16px;
+    left: -30px;
+    background: red;
+}
+.product_card  .sale_area h6{
+    font-size: 18px;
+    margin-top: 8px
+}
+.product_card  .new_area h6{
+    font-size: 18px;
+    margin-top: 8px
+}
+.related_card  .sale_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    top: 6px;
+    left: 6px;
+    background-image: linear-gradient(rgb(228, 28, 28), rgb(248, 173, 33));
+}
+.related_card  .new_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    color: white;
+    width: 100px;
+    height: 20px;
+    transform: rotate(-45deg);
+    top: 12px;
+    left: -30px;
+    background-image: linear-gradient(rgb(228, 28, 28), rgb(248, 173, 33));
+}
+.related_card .sale_area h6{
+    font-size: 14px;
+    margin-top: 8px
+}
+.related_card .new_area h6{
+    font-size: 14px;
+    margin-top: 8px
+}
+
+/*-----Filter------*/
+@import url("./filter.css");
+@import url("../Loading/loading.css");
+@import url("../Dialog/dialog.css");
+@import url('../NotFound/notFound.css');
+@import url('../../Profile//profile.css');

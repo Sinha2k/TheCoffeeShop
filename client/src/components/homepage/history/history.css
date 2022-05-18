@@ -1,0 +1,237 @@
+
+.order_history{
+    width: 90vw;
+    margin-left: 5vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+.order_history h1{
+    font-size: 3rem;
+    color: rgb(248, 112, 48);
+    font-family: 'Playfair Display', serif;
+}
+.order_history h4{
+    font-size: 1.6rem;
+    color: rgb(109, 196, 28);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.order_history button{
+    border: none;
+    background:rgb(245, 36, 22);
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+.table_history{
+    text-align: center;
+}
+.table_history img{
+    max-height: 70px;
+}
+.table_history td{
+    vertical-align: middle;
+}
+.table_history th{
+    position: sticky;
+    top: -1px;
+    background: white;
+}
+.order_products{
+    width: 100%;
+    overflow-y: scroll;
+    height: 300px;
+}
+.order_products::-webkit-scrollbar{
+    width: 5px;
+}
+  
+.order_products::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+.order_products::-webkit-scrollbar-thumb:hover{
+    background: rgb(117, 116, 116);
+}
+.order_delivery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.order_history .button_modal{
+    position: relative;
+    background-color: rgb(66, 138, 231);
+    padding: 8px 30px;
+    margin-bottom: 1.5rem;
+    margin-right: 1076px;
+}
+.order_history .button_modal:hover{
+    box-shadow: 0px 0px 0px 0px white;
+}
+.modal_product input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+.modal_product textarea{
+    outline: none;
+    font-size: 14px;
+    margin-top: 0.5rem;
+    border: 1px solid rgb(202, 202, 202);
+}
+.modal_product form input[type='file']{
+    display: none;
+}
+.modal_product form label{
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    background: rgb(248, 112, 48);
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+.modal_product form button{
+    font-size: 12px;
+    margin-left: 2rem;
+    background-color: rgb(66, 138, 231);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+.fa-file-image-o{
+    margin-right:4px ;
+    font-size: 12px;
+}
+.row_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.row_item input{
+    margin-left: 1rem;
+    font-size: 14px;
+}
+.item_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item_row .title{
+    width: 300px;
+}
+.row_category{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.row_category select{
+    margin-left: 2rem;
+    border: 1px solid rgb(202, 202, 202);
+    outline: none;
+    width: 170px;
+    font-size: 14px;
+}
+.size_field{
+    margin-left: -3rem;
+}
+.size_field input[type="checkbox"]{
+    margin-left: 4.5rem;
+}
+.size_field  label{
+    margin-left: 0.3rem;
+    font-size: 14px;
+}
+.modal_footer button{
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 7px 14px;
+    border: none;
+}
+.modal_footer button:hover{
+    box-shadow: 0px 0px 0px;
+}
+.modal_footer button:first-child{
+    background: rgb(189, 188, 188);
+    border: none;
+    color: rgb(65, 64, 64);
+    margin-right:1.5rem;
+}
+.dialog_body{
+    display: flex;
+    flex-direction: column;
+}
+.dialog_body .text_field{
+    margin-bottom: 2.7rem;
+    height: 3rem;
+}
+.dialog_body h5{
+    font-size: 1rem;
+}
+.distance{
+    height: 2rem;
+    width: 100%;
+}
+.button_dialog button{
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+.button_dialog button:first-child{
+    background: rgb(189, 188, 188);
+    border: none;
+    color: rgb(65, 64, 64);
+}
+@media  (max-width: 414px){
+    .order_history h1{
+        font-size: 2rem;
+        color: rgb(248, 112, 48);
+        font-family: 'Playfair Display', serif;
+    }
+    .order_history .button_modal{
+        margin-right: 290px;
+        padding: 5px 10px;
+    }
+    .order_delivery{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .order_delivery img{
+        width: 40px;
+        height: 30px;
+    }
+    .order_delivery span{
+        font-size: 10px;
+    }
+    .description{
+        width: 100%;
+    }
+    .item_row .title{
+        width: 100px;
+    }
+}
+.order_history .data_table button{
+    border-radius: 80px;
+    background: transparent;
+    color: black;
+}
+.order_history .data_table button:hover{
+    background: rgb(212, 212, 212);
+}
+.data_table .icon{
+    cursor: pointer;
+}

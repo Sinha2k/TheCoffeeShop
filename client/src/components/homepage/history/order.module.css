@@ -1,0 +1,43 @@
+.done{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.done img{
+    height: 60px;
+    object-fit:fill;
+    color: white;
+}
+.inProgress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: inProgress 1s ease infinite alternate;
+}
+.inProgress img{
+    height: 60px;
+    object-fit:fill;
+    color: white;
+}
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.unDone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+.unDone img{
+    height: 60px;
+    object-fit:fill;
+    color: white;
+}

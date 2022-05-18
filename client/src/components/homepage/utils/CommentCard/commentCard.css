@@ -1,0 +1,78 @@
+.commentCard{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+.commentCard:hover .more_icon{
+    visibility: visible;
+}
+.comment_body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.3rem;
+    margin-top: 10px;
+}
+.commentCard img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.body_item{
+    display: flex;
+    height: 24px;
+    position: relative;
+}
+.body_item img{
+    height: 15px;
+    width: 15px;
+    margin-left: -5px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+.body_item p{
+    margin-top: -1px;
+    font-size: 0.7rem;
+}
+.body_item h6{
+    font-weight: 700;
+    margin-right: 0.5rem;
+    font-size: 0.7rem;
+}
+.body_item span{
+    margin-right: 0.7rem;
+    cursor: pointer;
+}
+.commentCard i{
+    position: absolute;
+    right: 0rem;
+    cursor: pointer;
+}
+.more_icon{
+    visibility: hidden;
+    cursor: pointer;
+}
+.more_select{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0.5rem;
+    top: 0.2rem;
+    height: 2.2rem;
+    width: 4rem;
+    background: #fafafa;
+    border: 1px solid rgb(219, 219, 219);
+    z-index: 1;
+}
+.more_select p:first-child{
+    border-bottom: 1px solid rgb(219, 219, 219);
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.more_select p:last-child{
+    cursor: pointer;
+    text-align: center;
+    margin-top: -1rem;
+}

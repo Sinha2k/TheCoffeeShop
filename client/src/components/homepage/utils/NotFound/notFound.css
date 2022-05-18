@@ -1,0 +1,28 @@
+.not_found_page{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not_found_page{
+  font-size: 3rem;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+.story_management{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 2rem;
+}
+.story_management h1{
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 4rem;
+}
+.wrapperClassName {
+  width: 90%;
+}
+@import url('../../stories//stories.css');
+@import url('../ChatBox/chatBox.css');
