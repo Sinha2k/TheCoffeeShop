@@ -1,6 +1,6 @@
 # TheCoffeeShop
 This application has been created for the purpose of practicing programming skills with Reactjs and Nodejs. It's called TheCoffeeShop web where user can order drink and admin can manage user and store. This app has build with Front-end(Reactjs)
-and Back-end(Nodejs + MongoDb). The following is the interface of the website:
+and Back-end(Nodejs + MongoDb + Socket.io). The following is the interface of the website:
 
 ![homePage](https://github.com/Sinha2k/TheCoffeeShop/assets/93465305/018d32aa-ebf1-4d0e-bbb0-1ef7a0ff9c5a)
 ![MenuCoffePage](https://github.com/Sinha2k/TheCoffeeShop/assets/93465305/e890c16e-6365-4f55-96e6-350ae7a17970)
